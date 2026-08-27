@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::048333961515:oidc-provider/://githubusercontent.com"
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringLike": {
+          "://githubusercontent.com:sub": "repo:oscarestj-droid/cyber-p2-oscarestj:*"
+        }
+      }
+    }
+  ]
+}

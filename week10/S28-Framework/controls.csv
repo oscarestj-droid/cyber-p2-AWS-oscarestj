@@ -1,0 +1,6 @@
+AWS Service,NIST CSF 2.0 Core Function  
+GuardDuty,  Detect
+Terraform,  Protect
+IAM,        Protect
+CloudTrail, Detect
+AWS Backup, Recover
